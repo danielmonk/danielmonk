@@ -1,14 +1,15 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import LogoImage from "../components/images/logoImage"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
+  <header class="header">
+    <div class="header--logo">
+      <div class="logo">
+        <LogoImage />
+      </div>
+    </div>
     <div
       style={{
         margin: `0 auto`,

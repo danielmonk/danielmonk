@@ -1,35 +1,26 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import LogoImage from "../components/images/logoImage"
+import Logo from "../components/images/logoImage"
+import Headroom from "react-headroom"
 
 const Header = ({ siteTitle }) => (
-  <header class="header">
-    <div class="header--logo">
-      <div class="logo">
-        <LogoImage />
+  <Headroom>
+    <header class="header">
+      <div class="header--logo">
+        <div class="logo">
+          <Link to="/"><Logo /></Link>
+        </div>
       </div>
-    </div>
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+      <div class="header--nav">
+        <ul>
+          <li>Test</li>
+          <li>Test</li>
+          <li>Test</li>
+        </ul>
+      </div>
+    </header>
+  </Headroom>
 )
 
 Header.propTypes = {

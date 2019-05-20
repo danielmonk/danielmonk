@@ -1,0 +1,80 @@
+.terminal{
+    width:100%;
+    font-size: 18px;
+    line-height: 1.6;
+    background: #14121c;
+    padding: 50px 50px 50px 100px;
+    border-radius: 10px;
+    .line{
+        position: relative;
+        &:before{
+            content: attr(data-line-nr);
+            position: absolute;
+            left: -60px;
+            color: #3b3553;
+            font-family: Roboto Mono,Courier New,Courier,monospace!important;
+            font-size: 16px;
+            line-height: 1.6;
+            z-index: 3;
+            top: 0;
+        }
+        .dot{
+            color: #3b3553;
+            display: inline;
+        }
+        a{
+            color:inherit;
+            text-decoration: none;
+        }
+        .comment{
+            color: #78707e;
+            display: inline;
+        }
+        .red{
+            color: #e3244c;
+            display: inline;
+        }
+        .green{
+            color: #24e33a;
+            display: inline;
+        }
+        .purple{
+            color: $dm-purple;
+            display: inline;
+        }
+        .yellow{
+            color: #eeff31;
+            display: inline;
+        }
+        .blue{
+            color: $dm-blue;
+            display: inline;
+        }
+        em{
+            font-style:normal;
+        }
+        h1, h2, h3, h4, h5, p{
+            line-height:1.2;
+        }
+        h2{
+            font-weight:500;
+            //color:$dm-yellow;
+            @include responsive-font-size (
+                $min-font-size: 4em,
+                $max-font-size: 7em,
+                $min-screen-width: 640px,
+                $max-screen-width: 1200px,
+                $font-size-step: 0.1em /* optional, default: 0.1em */
+            );
+        }
+        h3, h5{
+            font-weight:400;
+        }
+        h5.italic{
+            //color:$dm-pink;
+        }
+        h5{
+            //color:$dm-blue;
+        }
+    }
+}

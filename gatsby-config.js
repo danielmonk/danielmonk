@@ -55,6 +55,6 @@ module.exports = {
         cookieDomain: "auto",
       },
     },
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
   ],
 }

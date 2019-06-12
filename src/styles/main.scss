@@ -2,16 +2,21 @@
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 @import 'abstracts/responsive-font';
+@import 'abstracts/animations';
 @import 'layout/global';
 
 
 // LAYOUT 
 @import 'layout/typography';
 @import 'layout/header';
+@import 'layout/footer';
+@import 'layout/loading';
 @import 'layout/video';
 
 // COMPONENTS 
 @import 'components/terminal';
+@import 'components/columns';
 
 // PAGES
+@import 'pages/page';
 @import 'pages/home';

@@ -1,6 +1,5 @@
 .headroom{
     z-index: 9999!important;
-    position: absolute!important;
     background-color:transparent;
     &.headroom--unfixed{
         .header{
@@ -8,6 +7,8 @@
         }
     }
 }
+
+
 .header{
     height: 90px;
     z-index: 9999;

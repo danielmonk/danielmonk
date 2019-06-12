@@ -2,7 +2,7 @@ body{
     overflow-x: hidden;
     margin: 0;
     color: #fff;
-    background: #0e0d10;
+    //background: #0e0d10;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size:14px;
@@ -44,24 +44,26 @@ body{
     justify-content: inherit;
     align-items: inherit;
     flex-wrap: wrap;
-    max-width:1070px;
+    max-width:75%;
     padding:0px;
   }
 
   @media(min-width: $xl-breakpoint) {
-    max-width:1280px;
+    //max-width:1280px;
   }
 }
 
 //page 
-.page{
-  margin-top:90px;
-  margin-bottom:50px;
+page{
   display: block;
+  background: #0e0d10;
 }
 
 //section
 section{
   padding:50px 0;
   display: block;
+  @media(min-width: $breakpoint) {
+    padding:100px 0;
+  }
 }

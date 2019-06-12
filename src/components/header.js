@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Logo from "../components/images/logoImage"
 import Headroom from "react-headroom"
+import '../js/helpers';
 
 const Header = ({ siteTitle }) => (
   <Headroom>
@@ -14,9 +15,9 @@ const Header = ({ siteTitle }) => (
       </div>
       <div class="header--nav">
         <ul>
-          <li>Test</li>
-          <li>Test</li>
-          <li>Test</li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/work">Work</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </div>
     </header>

@@ -1,0 +1,13 @@
+.two-col{
+    @media only screen and (min-device-width : 768px){
+        display:flex;
+    }
+    .column{
+        @media only screen and (min-device-width : 768px){
+            flex:1;
+        }
+    }
+}
+.one-col{
+
+}

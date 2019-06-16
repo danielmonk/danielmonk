@@ -5,7 +5,6 @@ import SEO from "../components/seo"
 import YouTube from 'react-youtube';
 import Typist from 'react-typist';
 import Fade from 'react-reveal/Fade';
-import ReactDelayRender from 'react-delay-render';
 
 const videoOptions = {
   playerVars: { // https://developers.google.com/youtube/player_parameters
@@ -24,10 +23,8 @@ class Header extends React.Component {
   componentDidMount () {
 
     setTimeout(() => {
-      [].slice.call(document.getElementsByClassName('loading'))
-      .forEach(function(elem) {
-          elem.classList.add('loaded');
-      });
+      var body = document.body;
+      body.classList.add("loaded");   
     },2000)
 
     var scrollpos = window.scrollY;

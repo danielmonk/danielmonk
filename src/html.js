@@ -24,9 +24,6 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
-        <div class="loading">
-          Loading Loading Loading 123
-        </div>
       </body>
     </html>
   )

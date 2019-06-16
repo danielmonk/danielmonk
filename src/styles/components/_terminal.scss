@@ -1,12 +1,18 @@
 .terminal{
     width:100%;
-    font-size: 18px;
     line-height: 1.6;
-    background: #14121c;
+    background: #28294b;
     //padding: 50px 50px 50px 100px;
     border-radius: 10px;
+    @include responsive-font-size (
+        $min-font-size: 1em,
+        $max-font-size: 1.2em,
+        $min-screen-width: 640px,
+        $max-screen-width: 1200px,
+        $font-size-step: 0.1em /* optional, default: 0.1em */
+    );
     &__tabs{
-        background: #000;
+        background: #1e1f3d;
         border-radius: 8px 8px 0 0;
         .tab{
             padding: 15px 30px;
@@ -18,7 +24,7 @@
             position: relative;
             margin-top:-10px;
             z-index: 2;
-            background: #14121c;
+            background: #28294b;
             font-size: 0.75rem;
             p{
                 margin-bottom:0px;
@@ -27,19 +33,25 @@
         }
     }
     &__typing{
-        padding: 50px 50px 50px 100px;
+        padding: 25px 25px 25px 45px;
+        @media only screen and (min-device-width : $ipad){
+            padding: 50px 50px 50px 100px;    
+        }
         .line{
             position: relative;
             &:before{
                 content: attr(data-line-nr);
                 position: absolute;
-                left: -60px;
+                left: -25px;
                 color: #3b3553;
                 font-family: Roboto Mono,Courier New,Courier,monospace!important;
                 font-size: 16px;
                 line-height: 1.6;
                 z-index: 3;
                 top: 0;
+                @media only screen and (min-device-width : $ipad){
+                    left: -60px;    
+                }
             }
             .dot{
                 color: #3b3553;
@@ -53,12 +65,15 @@
                 color: #78707e;
                 display: inline;
             }
+            > div{
+                display: inline;
+            }
             .red{
                 color: #e3244c;
                 display: inline;
             }
             .green{
-                color: #24e33a;
+                color: #b8fc9c;
                 display: inline;
             }
             .purple{
@@ -72,6 +87,24 @@
             .blue{
                 color: $dm-blue;
                 display: inline;
+            }
+            .pink{
+                color:#ee9bf9;
+                display: inline;
+            }
+            .orange{
+                color:#f3a13a;
+                display:inline;
+            }
+            .yellow{
+                color:#f4d146;
+                display:inline; 
+            }
+            .cyan{
+                color:#90c6d1;
+            }
+            .orange{
+                color:#f3a13a;
             }
             em{
                 font-style:normal;

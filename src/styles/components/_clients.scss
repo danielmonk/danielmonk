@@ -1,0 +1,52 @@
+.clients{
+    &__bg{
+        background:#6B21D4;
+        box-shadow:50px 25px 25px rgba(0,0,0,0.05);
+    }
+    &__wrapper{
+        display:flex;
+        flex-wrap:wrap;
+        padding: 125px 25px;
+        .client{
+            margin:50px 15px;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            width: calc(33% - 30px);
+            &:first-child{
+                //margin-left:0px;
+            }
+            &:last-child{
+                //margin-right:0px;
+            }
+            &.no-filter{
+                img{
+                    filter:none;
+                }
+            }
+            img{
+                filter: brightness(0) invert(1);
+                opacity:0.8;
+                max-width:125px;
+                margin: 0 auto;
+            }
+        }
+    }
+    &__text{
+        display: flex;
+        align-items:center;
+        height:100%;
+        @media only screen and (min-device-width : $ipad){
+            padding:0 50px;
+        }
+        p{
+            @include responsive-font-size (
+                $min-font-size: 2em,
+                $max-font-size: 3em,
+                $min-screen-width: 640px,
+                $max-screen-width: 1200px,
+                $font-size-step: 0.1em /* optional, default: 0.1em */
+            );
+        }
+    }
+}

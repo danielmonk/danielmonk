@@ -5,6 +5,12 @@ import SEO from "../components/seo"
 import YouTube from 'react-youtube';
 import Typist from 'react-typist';
 import Fade from 'react-reveal/Fade';
+import LGLogo from "../images/lg-logo.png"
+import CalpolLogo from "../images/calpol-logo.png"
+import LVLogo from "../images/lv-logo.png"
+import RACLogo from "../images/rac-logo.png"
+import KrogerLogo from "../images/kroger-logo.png"
+import EightLogo from "../images/888sport-logo.png"
 
 const videoOptions = {
   playerVars: { // https://developers.google.com/youtube/player_parameters
@@ -62,9 +68,9 @@ class Header extends React.Component {
                   <div id="typewriter" class="aligner">
                   <Typist>
                     <Typist.Delay ms={2000} />
-                    <h2>&#39;Creative&#39;.</h2><br/>
-                    <h5 class="italic">adjective</h5> <h5>[kree-ey-tiv]</h5><br/>
-                    <h3>Relating to or involving the use of the imagination or original ideas to create something.</h3>
+                    <h2 class="italic">&#39;Creative&#39;.</h2><br/>
+                    <h5 class="italic">adjective</h5> <h5 class="italic">[kree-ey-tiv]</h5><br/>
+                    <h3 class="italic">Relating to or involving the use of the imagination or original ideas to create something.</h3>
                   </Typist>
                   </div>
                 </div>
@@ -107,22 +113,22 @@ class Header extends React.Component {
                 </div>
                 <div class="terminal__typing">
                   <div class='line line-1' data-line-nr='1'>
-                    <div class="purple">class</div> <div class='yellow'>daniel</div> &#123;
+                    <div class='orange'>class</div> <div class='pink'>daniel</div> &#123;
                   </div>
                   <div class='line line-2' data-line-nr='2'>
                     <div class='dot'>..</div><div class='comment'>here's a brief list of my skills, experience & interests</div>
                   </div>
                   <div class='line line-3' data-line-nr='3'>
-                    <div class='dot'>..</div><em class='purple'>constructor</em>() &#123;
+                    <div class='dot'>..</div><div class='orange'>constructor</div>() &#123;
                   </div>
                   <div class='line line-4' data-line-nr='4'>
-                    <div class='dot'>..</div><div class='dot'>..</div><div class='red'>this</div>.name <div class='red'>=</div> <div class='green'>Daniel Monk</div>
+                    <div class='dot'>..</div><div class='dot'>..</div><div class='pink'>this</div><div class='yellow'>.name</div> = <div class='cyan'>Daniel Monk</div>
                   </div>
                   <div class='line line-5' data-line-nr='5'>
-                    <div class='dot'>..</div><div class='dot'>..</div><div class='red'>this</div>.dateOfBirth <div class='red'>=</div> <div class='green'>30/10/1993</div>
+                    <div class='dot'>..</div><div class='dot'>..</div><div class='pink'>this</div><div class='yellow'>.dateOfBirth</div> <div class='red'>=</div> <div class='red'>30/10/1993</div>
                   </div>
                   <div class='line line-6' data-line-nr='6'>
-                    <div class='dot'>..</div><div class='dot'>..</div><div class='red'>this</div>.email <div class='red'>=</div> <div class='green'><a target='_blank' href='mailto:danieljmonk@gmail.com'>danieljmonk@gmail.com</a></div>
+                    <div class='dot'>..</div><div class='dot'>..</div><div class='pink'>this</div><div class='yellow'>.email</div> <div class='red'>=</div> <div class='cyan'><a target='_blank' href='mailto:danieljmonk@gmail.com'>danieljmonk@gmail.com</a></div>
                   </div>
                   <div class='line line-7' data-line-nr='7'>
                     <div class='dot'>..</div>
@@ -131,7 +137,7 @@ class Header extends React.Component {
                     <div class='dot'>..</div><div class='yellow'>experience</div>() &#123;
                   </div>
                   <div class='line line-9' data-line-nr='9'>
-                    <div class='dot'>..</div><div class='dot'>..</div><div class='blue'>return</div> [
+                    <div class='dot'>..</div><div class='dot'>..</div><div class='orange'>return</div> [
                   </div>
                   <div class='line line-10' data-line-nr='10'>
                     <div class='dot'>..</div><div class='dot'>..</div><div class='dot'>..</div> &#123; <div class='green'>'2017-current'</div> 	&#58; <div class='green'>'Front-end developer at <a target='_blank' href='https://www.zazzlemedia.co.uk'>Zazzle Media</a>.'</div> 	&#125;
@@ -149,10 +155,10 @@ class Header extends React.Component {
                     <div class='dot'>..</div>&#125;
                   </div>
                   <div class='line line-15' data-line-nr='15'>
-                    <div class='dot'>..</div><span class='yellow'>interests</span>() &#123;	
+                    <div class='dot'>..</div><span class='yellow'>skills</span>() &#123;	
                   </div>
                   <div class='line line-16' data-line-nr='16'>
-                    <div class='dot'>..</div><div class='dot'>..</div><div class='blue'>return</div> [ <div class='green'>'HTML5', 'CSS3', 'JS', jQuery', 'Node.js', 'React', 'Gatsby', 'graphQL', 'npm/bower',</div>
+                    <div class='dot'>..</div><div class='dot'>..</div><div class='orange'>return</div> [ <div class='green'>'HTML5', 'CSS3', 'JS', jQuery', 'Node.js', 'React', 'Gatsby', 'graphQL', 'npm/bower',</div>
                   </div> 
                   <div class='line line-17' data-line-nr='17'>
                     <div class='green'>'gulp/grunt', 'SASS/Less', 'git', 'PHP', 'WordPress', 'MySQL', 'Photoshop', 'Adobe CC', 'Sketch'</div> ]
@@ -160,7 +166,16 @@ class Header extends React.Component {
                   <div class='line line-18' data-line-nr='18'>
                     <div class='dot'>..</div>&#125;
                   </div>
-                  <div class='line line-19' data-line-nr='19'>
+                  <div class='line line-15' data-line-nr='19'>
+                    <div class='dot'>..</div><span class='yellow'>interests</span>() &#123;	
+                  </div>
+                  <div class='line line-16' data-line-nr='20'>
+                    <div class='dot'>..</div><div class='dot'>..</div><div class='orange'>return</div> [ <div class='green'>'technology', 'Apple products', 'fitness', 'sports', 'overpriced footwear'</div> ]
+                  </div> 
+                  <div class='line line-18' data-line-nr='22'>
+                    <div class='dot'>..</div>&#125;
+                  </div>
+                  <div class='line line-19' data-line-nr='23'>
                   }
                   </div>
                 </div>
@@ -168,6 +183,38 @@ class Header extends React.Component {
               </div>
             </div>
             </Fade>
+          </section>
+
+          <section id="clients" class="clients">
+            <div class="">
+              <div class="two-col">
+                  <div class="column">
+                    <div class="clients__bg">
+                      <Fade left> 
+                        <div>
+                          <div class="clients__wrapper"> 
+                            <div class="client"><img src={LGLogo}></img></div>
+                            <div class="client no-filter"><img src={CalpolLogo}></img></div>
+                            <div class="client"><img src={LVLogo}></img></div>
+                            <div class="client"><img src={RACLogo}></img></div>
+                            <div class="client"><img src={KrogerLogo}></img></div>
+                            <div class="client"><img src={EightLogo}></img></div>
+                          </div>
+                        </div>
+                      </Fade>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="clients__text">
+                      <Fade right> 
+                        <div>
+                          <p>Just a sample of some of the <strong>awesome</strong> clients & brands I've worked with.</p>
+                        </div>
+                      </Fade>
+                    </div>
+                  </div>
+              </div>
+            </div>
           </section>
     
           <section id="contact" class="contact">

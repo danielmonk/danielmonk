@@ -10,14 +10,14 @@
     align-items: center;
     img{
         margin: 0 auto;
-        max-width:250px;
+        max-width:125px;
     }
 }
 body{
     overflow: hidden;
 }
 body.loaded{
-    overflow:scroll;
+    overflow-y:scroll;
     .loading{
         display: none
     }

@@ -62,12 +62,12 @@ body.page--home{
             #typewriter{
                 z-index:102;
                 position: relative;
-                @media only screen and (min-device-width : $ipad){
+                @media only screen and (min-width : $ipad){
                     //max-width:70%;
                     padding-right:30%;
                     min-height:420px;
                 }
-                @media only screen and (min-device-width : $large-breakpoint){
+                @media only screen and (min-width : $large-breakpoint){
                     //max-width:70%;
                     padding-right:50%;
                 }
@@ -137,10 +137,26 @@ body.page--home{
                 }
             }
         }
+        .video-background{
+            .fallback-img{
+                background-size:cover;
+                height: 100vh;
+                width: 100%;
+                @media only screen and (min-width : $ipad){
+                   display:none;
+                }
+            }
+            iframe{
+                display:none;
+                @media only screen and (min-width : $ipad){
+                    display:block;
+                }
+            }
+        } 
     }
     .about{
         .one-col{
-            @media only screen and (min-device-width : $ipad){
+            @media only screen and (min-width : $ipad){
                 max-width:80%;
             }
             h4{
@@ -170,7 +186,7 @@ body.page--home{
         background:#161618;
         text-align:center;
         padding:100px 0;
-        @media only screen and (min-device-width : $breakpoint){
+        @media only screen and (min-width : $breakpoint){
             padding:200px 0 100px;
             margin-top:-200px;
         }

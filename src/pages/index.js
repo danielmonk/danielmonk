@@ -11,6 +11,7 @@ import LVLogo from "../images/lv-logo.png"
 import RACLogo from "../images/rac-logo.png"
 import KrogerLogo from "../images/kroger-logo.png"
 import EightLogo from "../images/888sport-logo.png"
+import youtubeBGImg from "../images/youtube.jpg"
 
 const videoOptions = {
   playerVars: { // https://developers.google.com/youtube/player_parameters
@@ -21,6 +22,12 @@ const videoOptions = {
     loop: 1,
     mute: 1,
     playlist: 'ZYh6g5sQ9ak'
+  }
+};
+
+const styles = {
+  youtubeBG: {
+      backgroundImage: `url(${youtubeBGImg})`
   }
 };
 
@@ -60,11 +67,11 @@ class Header extends React.Component {
     return (
       <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-        <div class="page page--home">
-          <section id="top" class="top">
-            <div class="homepage-hero-module">
-              <div class="top--wrapper">
-                <div class="content--wrapper">
+        <div className="page page--home">
+          <section id="top" className="top">
+            <div className="homepage-hero-module">
+              <div className="top--wrapper">
+                <div className="content--wrapper">
                   <div id="typewriter" class="aligner">
                   <Typist>
                     <Typist.Delay ms={2000} />
@@ -77,6 +84,7 @@ class Header extends React.Component {
               </div>
               <div className="video-background">
                 <div className="video-foreground">
+                  <div class="fallback-img" style={styles.youtubeBG}></div>
                   <YouTube
                     videoId="ZYh6g5sQ9ak"
                     opts={videoOptions}

@@ -1,10 +1,10 @@
 .clients{
     .two-col{
-        @media only screen and (min-device-width : $ipad){
+        @media only screen and (min-width : $ipad){
             display:block;
             width:100%;
         }
-        @media only screen and (min-device-width : $breakpoint){
+        @media only screen and (min-width : $breakpoint){
             display:flex;
             width:100%;
         }
@@ -17,7 +17,7 @@
         display:flex;
         flex-wrap:wrap;
         padding: 50px 15px;
-        @media only screen and (min-device-width : $breakpoint){
+        @media only screen and (min-width : $breakpoint){
             padding: 125px 25px;
         }
         .client{
@@ -26,10 +26,10 @@
             display: flex;
             align-items: center;
             width: 100%;
-            @media only screen and (min-device-width : $ipad){
+            @media only screen and (min-width : $ipad){
                 width: calc(50% - 30px);
             }
-            @media only screen and (min-device-width : $max-width){
+            @media only screen and (min-width : $max-width){
                 width: calc(33% - 30px);
             }
             &:first-child{
@@ -56,7 +56,7 @@
         align-items:center;
         height:100%;
         padding:50px 15px 0;
-        @media only screen and (min-device-width : $breakpoint){
+        @media only screen and (min-width : $breakpoint){
             padding:0 100px 0 50px;
         }
         p{

@@ -34,7 +34,7 @@
     }
     &__typing{
         padding: 25px 25px 25px 45px;
-        @media only screen and (min-device-width : $ipad){
+        @media only screen and (min-width : $ipad){
             padding: 50px 50px 50px 100px;    
         }
         .line{
@@ -49,7 +49,7 @@
                 line-height: 1.6;
                 z-index: 3;
                 top: 0;
-                @media only screen and (min-device-width : $ipad){
+                @media only screen and (min-width : $ipad){
                     left: -60px;    
                 }
             }

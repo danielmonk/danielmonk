@@ -1,5 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
+import faviconApple from './images/favicons/apple-icon-180x180.png'
+import favicon32 from './images/favicons/favicon-32x32.png'
+import favicon16 from './images/favicons/favicon-16x16.png'
+import manifest from './images/favicons/manifest.json'
+import faviconICO from './images/favicons/favicon.ico'
 
 export default function HTML(props) {
   return (
@@ -11,6 +16,11 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <link rel="apple-touch-icon" sizes="180x180" href={faviconApple} />
+        <link rel="icon" type="image/png" sizes="32x32" href={favicon32} />
+        <link rel="icon" type="image/png" sizes="16x16" href={favicon16} />
+        <link rel="manifest" href={manifest} />
+        <link rel="shortcut icon" href={faviconICO} />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

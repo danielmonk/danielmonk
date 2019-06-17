@@ -1,4 +1,14 @@
 .clients{
+    .two-col{
+        @media only screen and (min-device-width : $ipad){
+            display:block;
+            width:100%;
+        }
+        @media only screen and (min-device-width : $breakpoint){
+            display:flex;
+            width:100%;
+        }
+    }
     &__bg{
         background:#6B21D4;
         box-shadow:50px 25px 25px rgba(0,0,0,0.05);
@@ -6,13 +16,22 @@
     &__wrapper{
         display:flex;
         flex-wrap:wrap;
-        padding: 125px 25px;
+        padding: 50px 15px;
+        @media only screen and (min-device-width : $breakpoint){
+            padding: 125px 25px;
+        }
         .client{
             margin:50px 15px;
             flex-grow: 1;
             display: flex;
             align-items: center;
-            width: calc(33% - 30px);
+            width: 100%;
+            @media only screen and (min-device-width : $ipad){
+                width: calc(50% - 30px);
+            }
+            @media only screen and (min-device-width : $max-width){
+                width: calc(33% - 30px);
+            }
             &:first-child{
                 //margin-left:0px;
             }
@@ -36,8 +55,9 @@
         display: flex;
         align-items:center;
         height:100%;
-        @media only screen and (min-device-width : $ipad){
-            padding:0 50px;
+        padding:50px 15px 0;
+        @media only screen and (min-device-width : $breakpoint){
+            padding:0 100px 0 50px;
         }
         p{
             @include responsive-font-size (

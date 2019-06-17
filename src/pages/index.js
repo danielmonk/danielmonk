@@ -185,6 +185,45 @@ class Header extends React.Component {
             </Fade>
           </section>
 
+          <section id="skills">
+            <div class="content--wrapper">
+              <div class="four-col">
+                <div class="column">
+                  <Fade left> 
+                  <div>
+                  <h3>Consult.</h3>
+                  <p>Working together to plan & strategise the perfect ideas for your project.</p>
+                  </div>
+                  </Fade>
+                </div>
+                <div class="column">
+                  <Fade right> 
+                  <div>
+                  <h3>Design.</h3>
+                  <p>Creating high quality designs to visually bring your project to life.</p>
+                  </div>
+                  </Fade>
+                </div>
+                <div class="column">
+                  <Fade left> 
+                  <div>
+                  <h3>Code.</h3>
+                  <p>Using the latest technology to craft a robust & complete final build. </p>
+                  </div>
+                  </Fade>
+                </div>
+                <div class="column">
+                  <Fade right> 
+                  <div>
+                  <h3>Support.</h3>
+                  <p>Offering extended support to continually expand your project's capabilities.</p>
+                  </div>
+                  </Fade>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <section id="clients" class="clients">
             <div class="">
               <div class="two-col">
@@ -222,7 +261,7 @@ class Header extends React.Component {
                 <div class="contact__text">
                   <Fade bottom fraction={0.4}>
                     <p>Interested?</p>
-                    <h3>Let's talk.</h3>
+                    <h3><a href="mailto:danieljmonk@gmail.com">Let's talk.</a></h3>
                   </Fade>
                 </div>
             </div>

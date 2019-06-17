@@ -68,9 +68,11 @@ p{
     );
 }
 a{
+    transition:0.2 all;
     &:hover{
         text-decoration: none;
         cursor: pointer;
+        transform: scale(1.1);
     }
 }
 .italic{

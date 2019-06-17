@@ -11,7 +11,6 @@ import LVLogo from "../images/lv-logo.png"
 import RACLogo from "../images/rac-logo.png"
 import KrogerLogo from "../images/kroger-logo.png"
 import EightLogo from "../images/888sport-logo.png"
-import youtubeBGImg from "../images/youtube.jpg"
 
 const videoOptions = {
   playerVars: { // https://developers.google.com/youtube/player_parameters

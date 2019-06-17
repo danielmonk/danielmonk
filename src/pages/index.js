@@ -27,7 +27,7 @@ const videoOptions = {
 
 const styles = {
   youtubeBG: {
-      backgroundImage: `url(${youtubeBGImg})`
+      backgroundImage: `url(${"../images/youtube.jpg"})`
   }
 };
 

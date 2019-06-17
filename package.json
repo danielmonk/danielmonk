@@ -17,8 +17,9 @@
     "gatsby-plugin-sass": "^2.0.11",
     "gatsby-plugin-sharp": "^2.0.37",
     "gatsby-remark-videos": "^0.3.0",
+    "gatsby-sharp": "^1.0.0-alpha11-alpha.00fcfe90",
     "gatsby-source-filesystem": "^2.0.36",
-    "gatsby-transformer-sharp": "^2.1.19",
+    "gatsby-transformer-sharp": "^2.1.21",
     "global": "^4.4.0",
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
@@ -35,8 +36,7 @@
     "swup": "^2.0.4"
   },
   "devDependencies": {
-    "prettier": "^1.17.1",
-    "yarn": "^1.16.0"
+    "prettier": "^1.17.1"
   },
   "keywords": [
     "gatsby"

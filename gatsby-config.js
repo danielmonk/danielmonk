@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `danielmonk`,
-    description: `My Site`,
+    title: `danielmonk.io`,
+    description: `danielmonk.io`,
     author: `@danielmonk`,
   },
   plugins: [
@@ -63,6 +63,12 @@ module.exports = {
           include: /\.inline\.svg$/
         }
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-76115201-3",
+      },
     },
   ],
 }

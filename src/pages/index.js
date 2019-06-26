@@ -151,7 +151,7 @@ class Header extends React.Component {
                     <div class='dot'>..</div><div class='dot'>..</div><div class='pink'>this</div><div class='yellow'>.dateOfBirth</div> <div class='red'>=</div> <div class='red'>30/10/1993</div>
                   </div>
                   <div class='line line-6' data-line-nr='6'>
-                    <div class='dot'>..</div><div class='dot'>..</div><div class='pink'>this</div><div class='yellow'>.email</div> <div class='red'>=</div> <div class='cyan'><a target='_blank' href='mailto:danieljmonk@gmail.com'>danieljmonk@gmail.com</a></div>
+                    <div class='dot'>..</div><div class='dot'>..</div><div class='pink'>this</div><div class='yellow'>.email</div> <div class='red'>=</div> <div class='cyan'><a target='_blank' rel="noopener noreferrer" href='mailto:danieljmonk@gmail.com'>danieljmonk@gmail.com</a></div>
                   </div>
                   <div class='line line-7' data-line-nr='7'>
                     <div class='dot'>..</div>
@@ -163,13 +163,13 @@ class Header extends React.Component {
                     <div class='dot'>..</div><div class='dot'>..</div><div class='orange'>return</div> [
                   </div>
                   <div class='line line-10' data-line-nr='10'>
-                    <div class='dot'>..</div><div class='dot'>..</div><div class='dot'>..</div>&#123; <div class='green'>'2017-current'</div> 	&#58; <div class='green'>'Front-end developer at <a target='_blank' href='https://www.zazzlemedia.co.uk'>Zazzle Media</a>.'</div> 	&#125;
+                    <div class='dot'>..</div><div class='dot'>..</div><div class='dot'>..</div>&#123; <div class='green'>'2017-current'</div> 	&#58; <div class='green'>'Front-end developer at <a target='_blank' rel="noopener noreferrer" href='https://www.zazzlemedia.co.uk'>Zazzle Media</a>.'</div> 	&#125;
                   </div>
                   <div class='line line-11' data-line-nr='11'>
-                    <div class='dot'>..</div><div class='dot'>..</div><div class='dot'>..</div>&#123; <div class='green'>'2016-2017'</div> : <div class='green'>'Front-end developer at <a target='_blank' href='https://www.mold.agency'>Mold Agency</a>.'</div> &#125;
+                    <div class='dot'>..</div><div class='dot'>..</div><div class='dot'>..</div>&#123; <div class='green'>'2016-2017'</div> : <div class='green'>'Front-end developer at <a target='_blank' rel="noopener noreferrer" href='https://www.mold.agency'>Mold Agency</a>.'</div> &#125;
                   </div>
                   <div class='line line-12' data-line-nr='12'>
-                    <div class='dot'>..</div><div class='dot'>..</div><div class='dot'>..</div>&#123; <div class='green'>'2013-2016'</div> : <div class='green'>'Junior developer at <a target='_blank' href='https://www.brave.agency'>Brave Agency</a>.'</div> &#125;
+                    <div class='dot'>..</div><div class='dot'>..</div><div class='dot'>..</div>&#123; <div class='green'>'2013-2016'</div> : <div class='green'>'Junior developer at <a target='_blank' rel="noopener noreferrer" href='https://www.brave.agency'>Brave Agency</a>.'</div> &#125;
                   </div>
                   <div class='line line-13' data-line-nr='13'>
                     <div class='dot'>..</div><div class='dot'>..</div>]

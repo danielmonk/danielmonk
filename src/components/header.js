@@ -28,9 +28,9 @@ const Header = ({ siteTitle }) => (
   </Headroom>
     <div class="sticky-sidebar">
       <div class="social-icons">
-        <a target="_blank" href="https://www.linkedin.com/in/daniel-monk-a808b8a3/" class="icon-links w-inline-block"><img class="icon" src={LinkedInIcon} /></a>
-        <a target="_blank" href="https://www.instagram.com/danielmonk" class="icon-links w-inline-block"><img class="icon" src={instagramIcon} /></a>
-        <a target="_blank" href="https://www.github.com/danielmonk" class="icon-links w-inline-block"><img class="icon" src={githubIcon} /></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/daniel-monk-a808b8a3/" class="icon-links w-inline-block"><img class="icon" src={LinkedInIcon} /></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/danielmonk" class="icon-links w-inline-block"><img class="icon" src={instagramIcon} /></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/danielmonk" class="icon-links w-inline-block"><img class="icon" src={githubIcon} /></a>
       </div>
       <div class="sidebar-line"></div>
       <div class="sidebar-text">Get in touch</div>

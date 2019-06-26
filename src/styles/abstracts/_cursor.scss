@@ -9,6 +9,10 @@
     animation: cursorAnim .25s infinite alternate;
     pointer-events: none;
     z-index:9999;
+    display:none;
+    @media only screen and (min-width : $breakpoint){
+        display:block;
+    }
 }
 
 .cursor::after {

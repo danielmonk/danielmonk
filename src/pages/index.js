@@ -11,6 +11,7 @@ import LVLogo from "../images/lv-logo.png"
 import RACLogo from "../images/rac-logo.png"
 import KrogerLogo from "../images/kroger-logo.png"
 import EightLogo from "../images/888sport-logo.png"
+import youtubeBGImg from "../images/youtube.jpg"
 
 const videoOptions = {
   playerVars: { // https://developers.google.com/youtube/player_parameters
@@ -26,7 +27,7 @@ const videoOptions = {
 
 const styles = {
   youtubeBG: {
-      backgroundImage: `url(${"../images/youtube.jpg"})`
+      backgroundImage: `url(${youtubeBGImg})`
   }
 };
 
@@ -36,7 +37,7 @@ class Header extends React.Component {
 
     setTimeout(() => {
       var body = document.body;
-      body.classList.add("loaded");   
+      body.classList.add("loaded"); 
     },2000)
 
     var scrollpos = window.scrollY;

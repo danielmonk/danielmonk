@@ -96,19 +96,22 @@
     transition: 0.2s ease-in-out;
 }
 .sticky-sidebar{
+    display:none;
     position: fixed;
     top: 30vh;
     right: 2.5vw;
     z-index: 999;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     width: 50px;
     height: 400px;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    @media only screen and (min-width : $breakpoint){
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
     .social-icons{
         position: absolute;
         left: 0;

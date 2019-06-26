@@ -2,7 +2,7 @@ $duration: 10s;
 .footer{
     background:#161618;
     padding:25px 0;
-    @media only screen and (min-width : 768px){
+    @media only screen and (min-width : $ipad){
         padding:50px 0;
     }
     &--menu{

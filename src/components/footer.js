@@ -11,8 +11,6 @@ const Footer = ({ siteTitle }) => (
           <ul class="ticker">
             <li>© Daniel Monk 2019. All rights reserved</li>
             <li><a href="mailto:danieljmonk@gmail.com">Mail: danieljmonk@gmail.com</a></li>
-            <li><Link to="/privacy-policy">Privacy Policy</Link></li>
-            <li><Link to="/terms-of-service">Terms of Service</Link></li>
           </ul>
         </div>
     </footer>

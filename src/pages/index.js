@@ -163,7 +163,7 @@ class Header extends React.Component {
                     <div class='dot'>..</div><div class='dot'>..</div><div class='orange'>return</div> [
                   </div>
                   <div class='line line-10' data-line-nr='10'>
-                    <div class='dot'>..</div><div class='dot'>..</div><div class='dot'>..</div> &#123; <div class='green'>'2017-current'</div> 	&#58; <div class='green'>'Front-end developer at <a target='_blank' href='https://www.zazzlemedia.co.uk'>Zazzle Media</a>.'</div> 	&#125;
+                    <div class='dot'>..</div><div class='dot'>..</div><div class='dot'>..</div>&#123; <div class='green'>'2017-current'</div> 	&#58; <div class='green'>'Front-end developer at <a target='_blank' href='https://www.zazzlemedia.co.uk'>Zazzle Media</a>.'</div> 	&#125;
                   </div>
                   <div class='line line-11' data-line-nr='11'>
                     <div class='dot'>..</div><div class='dot'>..</div><div class='dot'>..</div>&#123; <div class='green'>'2016-2017'</div> : <div class='green'>'Front-end developer at <a target='_blank' href='https://www.mold.agency'>Mold Agency</a>.'</div> &#125;

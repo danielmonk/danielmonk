@@ -19,6 +19,7 @@ const Footer = ({ siteTitle }) => (
     <div class="loading">
       <img class="icon" src={LoadingIcon} />
     </div>
+    <div class="cursor"></div>
   </div>
 )
 

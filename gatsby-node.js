@@ -6,12 +6,24 @@
 
 // You can delete this file if you're not using it
 exports.onCreateWebpackConfig = ({
-    actions,
-  }) => {
-    const { setWebpackConfig } = actions;
+  actions,
+  stage
+}) => {
+  const { setWebpackConfig } = actions;
+
+  if (stage === 'build-html') {
     setWebpackConfig({
-      externals: {
-        jquery: 'jQuery', // important: 'Q' capitalized
+      resolve: {
+        alias: {
+          'debug': require.resolve('debug').replace('index.js', 'browser.js'),
+        }
       }
     })
   }
+
+  setWebpackConfig({
+    externals: {
+      jquery: 'jQuery', // important: 'Q' capitalized
+    }
+  })
+} 

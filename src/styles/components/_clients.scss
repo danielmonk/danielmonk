@@ -56,8 +56,11 @@
         align-items:center;
         height:100%;
         padding:50px 15px 0;
-        @media only screen and (min-width : $breakpoint){
+        @media only screen and (min-width : $ipad){
             padding:0 100px 0 50px;
+        }
+        @media only screen and (min-width : $breakpoint){
+            padding:0 100px 0 100px;
         }
         p{
             @include responsive-font-size (

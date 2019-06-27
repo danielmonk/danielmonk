@@ -6,7 +6,7 @@ import YouTube from 'react-youtube';
 import Typist from 'react-typist';
 import Fade from 'react-reveal/Fade';
 import LGLogo from "../images/lg-logo.png"
-import CalpolLogo from "../images/calpol-logo.png"
+import CalpolLogo from "../images/calpol-logo-1.png"
 import LVLogo from "../images/lv-logo.png"
 import RACLogo from "../images/rac-logo.png"
 import KrogerLogo from "../images/kroger-logo.png"

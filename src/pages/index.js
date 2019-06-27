@@ -88,12 +88,12 @@ class Header extends React.Component {
               <div className="top--wrapper">
                 <div className="content--wrapper">
                   <div id="typewriter" class="aligner">
-                  <Typist>
-                    <Typist.Delay ms={2000} />
-                    <h2 class="italic">&#39;Creative&#39;.</h2><br/>
-                    <h5 class="italic">adjective</h5> <h5 class="italic">[kree-ey-tiv]</h5><br/>
-                    <h3 class="italic">Relating to or involving the use of the imagination or original ideas to create something.</h3>
-                  </Typist>
+                    <Typist>
+                      <Typist.Delay ms={2000} />
+                      <h2 class="italic">&#39;Creative&#39;.</h2><br/>
+                      <h5 class="italic">adjective</h5> <h5 class="italic">[kree-ey-tiv]</h5><br/>
+                      <h3 class="italic">Relating to or involving the use of the imagination or original ideas to create something.</h3>
+                    </Typist>
                   </div>
                 </div>
               </div>
@@ -148,7 +148,7 @@ class Header extends React.Component {
                     <div class='dot'>..</div><div class='dot'>..</div><div class='pink'>this</div><div class='yellow'>.name</div> = <div class='cyan'>Daniel Monk</div>
                   </div>
                   <div class='line line-5' data-line-nr='5'>
-                    <div class='dot'>..</div><div class='dot'>..</div><div class='pink'>this</div><div class='yellow'>.dateOfBirth</div> <div class='red'>=</div> <div class='red'>30/10/1993</div>
+                    <div class='dot'>..</div><div class='dot'>..</div><div class='pink'>this</div><div class='yellow'>.dateOfBirth</div> <div class='red'>=</div> <div class='red'>'30/10/1993'</div>
                   </div>
                   <div class='line line-6' data-line-nr='6'>
                     <div class='dot'>..</div><div class='dot'>..</div><div class='pink'>this</div><div class='yellow'>.email</div> <div class='red'>=</div> <div class='cyan'><a target='_blank' rel="noopener noreferrer" href='mailto:danieljmonk@gmail.com'>danieljmonk@gmail.com</a></div>

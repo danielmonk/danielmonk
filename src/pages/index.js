@@ -90,9 +90,9 @@ class Header extends React.Component {
                   <div id="typewriter" class="aligner">
                     <Typist>
                       <Typist.Delay ms={2000} />
-                      <h2 class="italic">&#39;Creative&#39;.</h2><br/>
-                      <h5 class="italic">adjective</h5> <h5 class="italic">[kree-ey-tiv]</h5><br/>
-                      <h3 class="italic">Relating to or involving the use of the imagination or original ideas to create something.</h3>
+                      <h2>&#x22;Creative.&#x22;</h2><br/>
+                      <h5>adjective</h5> <h5 class="italic">[kree-ey-tiv]</h5><br/>
+                      <h3>Relating to or involving the use of the imagination or original ideas to create something.</h3>
                     </Typist>
                   </div>
                 </div>

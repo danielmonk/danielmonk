@@ -26,7 +26,7 @@
     &--logo{
         flex:2;
         padding-left:15px;
-        margin-top: 20px;
+        //margin-top: 20px;
     }
     &--nav{
         flex:1;
@@ -78,7 +78,24 @@
 .logo{
     z-index:9999;
     position: relative;
-    max-width:100px;
+    //max-width:100px;
+    width: 100px;
+    height: 100px;
+    margin-top:10px;
+    bottom: 0;
+    background-image: url(http://localhost:8000/static/logo-1-ad9afb4….png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation: giffy 0.5s infinite steps(1);
+    @media only screen and (min-width : $breakpoint){
+        width: 120px;
+        height: 120px;
+        margin-top:20px;
+    }
+    &:hover{
+        animation-play-state:paused;
+    }
     img{
         transition: 0.2s ease-in-out;
     }
@@ -172,4 +189,14 @@
             transform: rotate(-30deg);
         }
     }
+}
+
+@keyframes giffy {
+	0%   { background-image: url("../images/logo/logo-1.png"); } 
+	16%  { background-image: url("../images/logo/logo-2.png"); }
+	32%  { background-image: url("../images/logo/logo-3.png"); }
+	48%  { background-image: url("../images/logo/logo-4.png"); }
+	64%  { background-image: url("../images/logo/logo-5.png"); }
+	80%  { background-image: url("../images/logo/logo-6.png"); }
+	100%  { background-image: url("../images/logo/logo-7.png"); }
 }

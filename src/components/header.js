@@ -1,7 +1,8 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import Logo from "../components/images/logoImage"
+//import Logo from "../components/images/logoImage"
+import Logo from "../images/danielmonk.gif"
 import Headroom from "react-headroom"
 import FacebookIcon from "../images/facebook-inline.svg"
 import LinkedInIcon from "../images/linkedin-inline.svg"
@@ -16,7 +17,7 @@ const Header = ({ siteTitle }) => (
     <header class="header">
       <div class="header--logo">
         <div class="logo">
-          <Link to="/"><Logo /></Link>
+          <Link to="/"><div class="logo"></div></Link>
         </div>
       </div>
       <div class="header--nav">

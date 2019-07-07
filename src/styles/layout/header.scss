@@ -120,6 +120,9 @@
 .headroom--unpinned {
     transform: translateY(-125%);
     transition: 0.2s ease-in-out;
+    .logo{
+        margin-top:0px;
+    }
 }
 .sticky-sidebar{
     display:none;

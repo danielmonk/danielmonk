@@ -81,7 +81,7 @@
     //max-width:100px;
     width: 100px;
     height: 100px;
-    margin-top:10px;
+    margin-top:0px;
     bottom: 0;
     background-image: url(http://localhost:8000/static/logo-1-ad9afb4….png);
     background-repeat: no-repeat;
@@ -107,6 +107,15 @@
 .headroom--pinned {
     transform: translateY(0%);
     transition: 0.2s ease-in-out;
+    .logo{
+        height:80px;
+        width:80px;
+        @media only screen and (min-width : $breakpoint){
+            width: 100px;
+            height: 100px;
+            margin-top:0px;
+        }  
+    }
 }
 .headroom--unpinned {
     transform: translateY(-125%);

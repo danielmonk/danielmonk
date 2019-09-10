@@ -14,28 +14,28 @@ import '../js/helpers';
 const Header = ({ siteTitle }) => (
   <div>
   <Headroom>
-    <header class="header">
-      <div class="header--logo">
-        <div class="logo">
-          <Link to="/"><div class="logo"></div></Link>
+    <header className="header">
+      <div className="header--logo">
+        <div className="logo">
+          <Link to="/"><div className="logo"></div></Link>
         </div>
       </div>
-      <div class="header--nav">
+      <div className="header--nav">
         <ul>
           <li><a href="mailto:danieljmonk@gmail.com">Contact</a></li>
         </ul>
       </div>
     </header>
   </Headroom>
-    <div class="sticky-sidebar">
-      <div class="social-icons">
-        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/daniel-monk-a808b8a3/" class="icon-links w-inline-block"><img class="icon" src={LinkedInIcon} /></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/danielmonk" class="icon-links w-inline-block"><img class="icon" src={instagramIcon} /></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/danielmonk" class="icon-links w-inline-block"><img class="icon" src={githubIcon} /></a>
+    <div className="sticky-sidebar">
+      <div className="social-icons">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/daniel-monk-a808b8a3/" className="icon-links w-inline-block"><img className="icon" src={LinkedInIcon} /></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/danielmonk" className="icon-links w-inline-block"><img className="icon" src={instagramIcon} /></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/danielmonk" className="icon-links w-inline-block"><img className="icon" src={githubIcon} /></a>
       </div>
-      <div class="sidebar-line"></div>
-      <div class="sidebar-text">Get in touch</div>
-      <a href="mailto:danieljmonk@gmail.com" class="sidebar-icon-parent w-inline-block"><img class="icon" src={MailIcon} /></a>
+      <div className="sidebar-line"></div>
+      <div className="sidebar-text">Get in touch</div>
+      <a href="mailto:danieljmonk@gmail.com" className="sidebar-icon-parent w-inline-block"><img className="icon" src={MailIcon} /></a>
     </div>  
   </div>
 )

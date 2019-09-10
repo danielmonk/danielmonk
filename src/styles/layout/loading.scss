@@ -14,7 +14,8 @@
     }
 }
 body{
-    overflow: hidden;
+    //overflow: hidden;
+    overflow-y:scroll;
 }
 body.loaded{
     overflow-y:scroll;

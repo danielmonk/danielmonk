@@ -35,10 +35,13 @@ class Header extends React.Component {
 
   componentDidMount () {
 
+    
+    /*
     setTimeout(() => {
       var body = document.body;
       body.classList.add("loaded"); 
     },2000)
+    */
 
     var scrollpos = window.scrollY;
     var header = document.querySelector(".page");

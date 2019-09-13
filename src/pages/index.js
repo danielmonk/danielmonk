@@ -10,7 +10,7 @@ import RACLogo from "../images/rac-logo.png"
 import KrogerLogo from "../images/kroger-logo.png"
 import EightLogo from "../images/888sport-logo.png"
 import youtubeBGImg from "../images/youtube.jpg"
-import youtubeVideo from "../videos/NY-Collated.mp4"
+import youtubeVideo from "../videos/NY-Collated-minimised.mp4"
 
 const videoOptions = {
   playerVars: { // https://developers.google.com/youtube/player_parameters

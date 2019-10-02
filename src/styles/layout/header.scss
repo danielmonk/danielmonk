@@ -19,7 +19,7 @@
     //top:0px;
     align-items:center;
     flex-wrap:wrap;
-    background:$dm-purple;
+    background:#111;
     @media only screen and (min-width : 768px){
         flex-wrap:unset;
     }
@@ -186,7 +186,7 @@
         font-weight: 500;
     }
     .sidebar-icon-parent{
-        background:$dm-yellow;
+        background:$dm-purple;
         position: absolute;
         border-radius:50%;
         top: 328px;

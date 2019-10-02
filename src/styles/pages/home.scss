@@ -1,5 +1,5 @@
 .purple-overlay{
-    background: #832eff; /* Old browsers */
+    background: #000; /* Old browsers */
     position: absolute;
     top:0px;
     left:0px;
@@ -7,7 +7,7 @@
     width:100%;
     z-index:101;
     background-blend-mode: multiply;
-    opacity:0.50;
+    opacity:0;
 }
 body.page--home{
     margin-top:0px;
@@ -16,7 +16,7 @@ body.page--home{
     }
 }
 .page--home{
-    background:#5B1EB2;
+    background:#000;
     margin-top:0px;
     padding-top:0px;
     .container.white{
@@ -31,7 +31,7 @@ body.page--home{
         .top{
             .homepage-hero-module{
                 opacity:0;
-                transform: translateY(-20px);
+                transform: translateY(-20%);
             }
         }
     }
@@ -46,6 +46,7 @@ body.page--home{
         display:flex;
         padding:0px;
         height: 100vh;
+        align-items:normal;
         .homepage-hero-module {
             border-right: none;
             border-left: none;
@@ -62,26 +63,29 @@ body.page--home{
             #typewriter{
                 z-index:102;
                 position: relative;
+                margin:0 auto;
+                text-align:center;
                 @media only screen and (min-width : $ipad){
                     //max-width:70%;
-                    padding-right:30%;
+                    //padding-right:30%;
                     min-height:420px;
+                    max-width:50%;
                 }
                 @media only screen and (min-width : $large-breakpoint){
                     //max-width:70%;
-                    padding-right:50%;
+                    //padding-right:50%;
                 }
                 h2 {
                     display: inline-block;
-                    background: $dm-purple;
-                    color: #fff;
+                    //background: $dm-purple;
+                    color: #f5f5f7;
                     padding: 15px;
-                    text-shadow:10px 7px 1px #6B21D4;
                     text-transform:uppercase;
+                    letter-spacing: -.015em;
                     //text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
                     @include responsive-font-size (
                         $min-font-size: 1.6em,
-                        $max-font-size: 5em,
+                        $max-font-size: 8em,
                         $min-screen-width: 640px,
                         $max-screen-width: 1200px,
                         $font-size-step: 0.1em /* optional, default: 0.1em */
@@ -89,15 +93,15 @@ body.page--home{
                 }
                 h3 {
                     display: inline-block;
-                    background: $dm-purple;
-                    color: #fff;
-                    padding: 15px;
-                    text-shadow:10px 7px 1px #6B21D4;
+                    //background: $dm-purple;
+                    color: #aaa;
+                    padding: 0px 15px;
                     font-weight: 400;
+                    letter-spacing: -.015em;
                     //text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
                     @include responsive-font-size (
                         $min-font-size: 1.4em,
-                        $max-font-size: 2em,
+                        $max-font-size: 2.5em,
                         $min-screen-width: 640px,
                         $max-screen-width: 1200px,
                         $font-size-step: 0.1em /* optional, default: 0.1em */
@@ -121,16 +125,17 @@ body.page--home{
                 }
                 h5 {
                     display: inline-block;
-                    background: $dm-purple;
-                    color: #fff;
-                    padding: 15px;
-                    margin-right:15px;
-                    text-shadow:10px 7px 1px #6B21D4;
+                    //background: $dm-purple;
+                    color: #aaa;
+                    padding: 0 15px;
+                    //margin-right:15px;
+                    //text-shadow:10px 7px 1px #6B21D4;
                     font-weight: 400;
+                    letter-spacing: -.015em;
                     //text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
                     @include responsive-font-size (
                         $min-font-size: 1em,
-                        $max-font-size: 1.5em,
+                        $max-font-size: 2em,
                         $min-screen-width: 640px,
                         $max-screen-width: 1200px,
                         $font-size-step: 0.1em /* optional, default: 0.1em */
@@ -178,9 +183,50 @@ body.page--home{
             }
         }
     }
-    .terminal-wrap{
+    .terminal-sticky-container{
+        height:400vh;
+        align-items:start;
+        display:block;
+        top:15vh;
+        .terminal-sticky-content{
+            position: sticky;
+            top:8vh;
+            width:100%;
+        }
+        .terminal-container{
+            display:flex;
+            width:100%;
+        }
+        .trigger1{
+            top: 8%;
+            position: absolute;
+        }
+        .trigger2{
+            bottom: 10%;
+            position: absolute;
+        }
+        .trigger3{
+            bottom: 50%;
+            position: absolute;
+        }
         .terminal{
+            transform:scale(0.5);
             min-height:710px;
+            &-animate{
+                will-change: opacity, transform;
+            }
+        }
+        .terminal-bg{
+            background-image:url("../images/macbook-render.png");
+            width: 1200px;
+            height: 900px;
+            background-size: contain;
+            background-repeat:no-repeat;
+            position: absolute;
+            left:0;
+            right:0;
+            margin:0 auto;
+            transition: background-size 0.5s;
         }
     }
     .contact{
@@ -235,7 +281,7 @@ body.page--home{
             }
         }
         #terminal{
-            margin-top:100px;
+            //margin-top:100px;
             img{
                 width:100%;
                 height:220px;

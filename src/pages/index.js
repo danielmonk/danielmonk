@@ -43,7 +43,7 @@ class Header extends React.Component {
         //Here you forgot to update the value
         scrollpos = window.scrollY;
 
-        if(scrollpos > 500){
+        if(scrollpos > 2000){
             add_class_on_scroll();
         }
         else {
@@ -67,7 +67,26 @@ class Header extends React.Component {
     })
 
     // gsap animations
-      // first scroll
+      // iphone ititial
+      var iphoneFirstScroll = new TimelineMax();
+
+      iphoneFirstScroll
+      .from(".phone-wrapper",1, {scale: 3, transformOrigin: "center center"})
+      .to('.phone-wrapper', 2, {scale: 1, y: "0vh"})
+
+      var iphoneFirst = new ScrollMagic.Controller();
+
+      // first scene
+      var iphone1 = new ScrollMagic.Scene({
+        triggerElement: '.iphone1',
+        duration: "300%"
+      })
+
+      .setTween(iphoneFirstScroll)
+      .addIndicators()
+      .addTo(iphoneFirst)
+
+      // macbook first scroll
       var tlFirstScroll = new TimelineMax();
 
       tlFirstScroll
@@ -130,28 +149,30 @@ class Header extends React.Component {
       <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
         <div className="page page--home">
-          <section id="top" className="top">
-            <div className="homepage-hero-module">
-              <div className="top--wrapper">
-                <div className="content--wrapper">
-                  <div id="typewriter" className="aligner">
-                    <Typist>
-                      <Typist.Delay ms={2000} />
-                      <h2>&#x22;Creative.&#x22;</h2><br/>
-                      <h5>adjective</h5> <h5 className="italic">[kree-ey-tiv]</h5><br/>
-                      <h3>Relating to or involving the use of the imagination or original ideas to create something.</h3>
-                    </Typist>
+          <section id="top" className="top-sticky-container">
+            <div className="phone1 trigger"><p>phone 1 trigger</p></div>
+            <div className="top-sticky-content">
+              <div class="top-container">
+                <div className="homepage-hero-module">
+                  <div className="phone-wrapper">
+                    <div className="phone-bg"></div>
+                        <video autoPlay muted loop playsInline>
+                          <source src={youtubeVideo} type="video/mp4" />
+                        </video>
+                  </div>
+                  <div className="top-sticky-container--wrapper">
+                    <div className="content--wrapper">
+                      <div id="typewriter" className="aligner">
+                        <Typist>
+                          <Typist.Delay ms={2000} />
+                          <h2>&#x22;Creative.&#x22;</h2><br/>
+                          <h5>adjective</h5> <h5 className="italic">[kree-ey-tiv]</h5><br/>
+                          <h3>Relating to or involving the use of the imagination or original ideas to create something.</h3>
+                        </Typist>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="video-background">
-                <div className="video-foreground">
-                  <div className="fallback-img" style={styles.youtubeBG}></div>
-                  <video autoPlay muted loop playsInline>
-                    <source src={youtubeVideo} type="video/mp4" />
-                  </video>
-                </div>
-                <div className="purple-overlay"></div>
               </div>
             </div>
           </section>

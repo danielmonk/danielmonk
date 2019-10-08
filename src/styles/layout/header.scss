@@ -13,13 +13,13 @@
     height: 90px;
     z-index: 9999;
     display: flex;
-    //position: fixed;
+    position: absolute;
     width: 100%;
     transition: 0.2s ease-in-out;
     //top:0px;
     align-items:center;
     flex-wrap:wrap;
-    background:#111;
+    //background:#111;
     @media only screen and (min-width : 768px){
         flex-wrap:unset;
     }

@@ -35,18 +35,25 @@ body.page--home{
             }
         }
     }
-    .top{
+    .top-sticky-container{
         color: #fff;
-        position: relative;
-        top: -90px;
-        left: 0;
-        overflow: hidden;
-        width: 100%;
-        z-index: 3;
-        display:flex;
-        padding:0px;
-        height: 100vh;
-        align-items:normal;
+        height: 400vh;
+        align-items: start;
+        display: block;
+        top: 15vh;
+        .top-sticky-content{
+            position: sticky;
+            top: 20vh;
+            width: 100%;
+        }
+        .top-container{
+            display:flex;
+            width:100%;
+        }
+        .phone1{
+            position:absolute;
+            top:0%;
+        }
         .homepage-hero-module {
             border-right: none;
             border-left: none;
@@ -54,12 +61,54 @@ body.page--home{
             transition: all .4s;
             opacity:1;
         }
+        .phone-wrapper{
+            width: 1070px;
+            height: 538px;
+            //overflow: hidden;
+            justify-content: center;
+            align-items: center;
+            //visibility: hidden;
+            display: flex;
+            position: relative;
+            margin: 0 auto 0;
+            z-index: 1;
+            background: #000;
+            .phone-bg{
+                background-image:url("../images/iphone-bg.png");
+                width: 1070px;
+                height: 538px;
+                background-size: 1070px 538px;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+            }
+            video{
+                object-fit: cover;
+                transition: opacity 0.5s ease-in;
+                width: calc(100% - 60px);
+                height: calc(100% - 60px);
+                --crop-square-offset-x: 1;
+                --crop-square-offset-y: 7;
+                --crop-square-width: 454px;
+                --crop-square-height: 256px;
+                position: absolute;
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+            }
+        }
         &--wrapper{
-            display:flex;
-            align-items:center;
+            //display:flex;
+            //align-items:center;
             height:100%;
             opacity:1;
             transition: all .4s;
+            position:absolute;
+            top:0;
+            width:100%;
+            //margin-top:25vh;
             #typewriter{
                 z-index:102;
                 position: relative;
@@ -143,22 +192,6 @@ body.page--home{
                 }
             }
         }
-        .video-background{
-            .fallback-img{
-                background-size:cover;
-                height: 100vh;
-                width: 100%;
-                @media only screen and (min-width : $ipad){
-                   display:none;
-                }
-            }
-            iframe{
-                display:none;
-                @media only screen and (min-width : $ipad){
-                    display:block;
-                }
-            }
-        } 
     }
     .about{
         .one-col{

@@ -40,7 +40,7 @@ body.page--home{
         height: 400vh;
         align-items: start;
         display: block;
-        top: 15vh;
+        top: 0;
         .top-sticky-content{
             position: sticky;
             top: 20vh;
@@ -82,7 +82,7 @@ body.page--home{
                 position: absolute;
                 top: 0;
                 left: 0;
-                z-index: 2;
+                z-index: 3;
             }
             video{
                 object-fit: cover;
@@ -100,9 +100,9 @@ body.page--home{
             }
         }
         &--wrapper{
-            //display:flex;
-            //align-items:center;
-            height:100%;
+            display:flex;
+            align-items:center;
+            height:100vh;
             opacity:1;
             transition: all .4s;
             position:absolute;

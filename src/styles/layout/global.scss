@@ -84,3 +84,15 @@ section{
     display:none;
   }
 }
+
+// overlay
+.overlay{
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.5;
+}

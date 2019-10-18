@@ -71,8 +71,12 @@ class Header extends React.Component {
       var iphoneFirstScroll = new TimelineMax();
 
       iphoneFirstScroll
-      .from(".phone-wrapper",1, {scale: 3, transformOrigin: "center center"})
+      .from(".phone-wrapper",1, {scale: 3.5, transformOrigin: "center center", delay: 1})
       .to('.phone-wrapper', 2, {scale: 1, y: "0vh"})
+
+      iphoneSecondScroll
+      .from(".phone-bg .overlay",1, {css:{opacity: "0.5", delay: 1ib}})
+      .to('.phone-wrapper', 2, {css:{opacity: "1"}})
 
       var iphoneFirst = new ScrollMagic.Controller();
 
@@ -151,26 +155,27 @@ class Header extends React.Component {
         <div className="page page--home">
           <section id="top" className="top-sticky-container">
             <div className="phone1 trigger"><p>phone 1 trigger</p></div>
+            <div className="top-sticky-container--wrapper">
+              <div className="content--wrapper">
+                <div id="typewriter" className="aligner">
+                  <Typist>
+                    <Typist.Delay ms={2000} />
+                    <h2>&#x22;Creative.&#x22;</h2><br/>
+                    <h5>adjective</h5> <h5 className="italic">[kree-ey-tiv]</h5><br/>
+                    <h3>Relating to or involving the use of the imagination or original ideas to create something.</h3>
+                  </Typist>
+                </div>
+              </div>
+            </div>
             <div className="top-sticky-content">
               <div class="top-container">
                 <div className="homepage-hero-module">
                   <div className="phone-wrapper">
                     <div className="phone-bg"></div>
-                        <video autoPlay muted loop playsInline>
-                          <source src={youtubeVideo} type="video/mp4" />
-                        </video>
-                  </div>
-                  <div className="top-sticky-container--wrapper">
-                    <div className="content--wrapper">
-                      <div id="typewriter" className="aligner">
-                        <Typist>
-                          <Typist.Delay ms={2000} />
-                          <h2>&#x22;Creative.&#x22;</h2><br/>
-                          <h5>adjective</h5> <h5 className="italic">[kree-ey-tiv]</h5><br/>
-                          <h3>Relating to or involving the use of the imagination or original ideas to create something.</h3>
-                        </Typist>
-                      </div>
-                    </div>
+                    <div class="overlay"></div>
+                      <video autoPlay muted loop playsInline>
+                        <source src={youtubeVideo} type="video/mp4" />
+                      </video>
                   </div>
                 </div>
               </div>

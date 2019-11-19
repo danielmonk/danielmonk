@@ -37,7 +37,7 @@ body.page--home{
     }
     .top-sticky-container{
         color: #fff;
-        height: 400vh;
+        height: 800vh;
         align-items: start;
         display: block;
         top: 0;
@@ -73,6 +73,18 @@ body.page--home{
             margin: 0 auto 0;
             z-index: 1;
             background: #000;
+            overflow:hidden;
+            .video-controls{
+                background-image:url("../images/video-controls.png");
+                width: 890px;
+                height: 462px;
+                background-size: 890px 462px;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 38px;
+                left: 45px;
+                z-index: 3;
+            }
             .phone-bg{
                 background-image:url("../images/iphone-bg.png");
                 width: 1070px;
@@ -83,6 +95,7 @@ body.page--home{
                 top: 0;
                 left: 0;
                 z-index: 3;
+                transform:rotate(180deg);
             }
             video{
                 object-fit: cover;
@@ -94,7 +107,7 @@ body.page--home{
                 --crop-square-width: 454px;
                 --crop-square-height: 256px;
                 position: absolute;
-                z-index: 1;
+                z-index: -1;
                 display: flex;
                 justify-content: center;
             }

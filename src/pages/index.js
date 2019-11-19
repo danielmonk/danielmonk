@@ -73,22 +73,51 @@ class Header extends React.Component {
       iphoneFirstScroll
       .from(".phone-wrapper",1, {scale: 3.5, transformOrigin: "center center", delay: 1})
       .to('.phone-wrapper', 2, {scale: 1, y: "0vh"})
-
-      iphoneSecondScroll
-      .from(".phone-bg .overlay",1, {css:{opacity: "0.5", delay: 1ib}})
-      .to('.phone-wrapper', 2, {css:{opacity: "1"}})
+      .from(".phone-wrapper .overlay",1, {css:{opacity: "0.5", delay: 1}})
+      .to('.phone-wrapper .overlay', 2, {css:{opacity: "0"}})
+      .from(".phone-wrapper video", 1, {css:{padding: "0px", delay: 1}})
+      .to(".phone-wrapper video", 2, {css:{padding:"0px 165px 0 185px"}})
+      .from(".video-controls", 1, {css:{opacity: "0", delay: 1}})
+      .to(".video-controls", 2, {css:{opacity: "1"}})
+      .from(".phone-bg", 1, {})
+      .to(".phone-bg", 2,  {css:{width: "1070px", height:"548px", backgroundSize: "1070px 548px", top: "-5px"}})
+      .from(".phone-wrapper", 1, { rotation:0 })
+      .from(".phone-wrapper video", 1, {})
+      .to(".phone-wrapper", 2, { rotation:-90 })
+      .to(".phone-wrapper video", 2, {css:{width: "calc(100% - 220px)", height:"calc(100% - -90px)", transform: "rotate(90deg)"}})
 
       var iphoneFirst = new ScrollMagic.Controller();
 
       // first scene
       var iphone1 = new ScrollMagic.Scene({
-        triggerElement: '.iphone1',
-        duration: "300%"
+        triggerElement: 'iphone1',
+        duration: "500%"
       })
 
       .setTween(iphoneFirstScroll)
       .addIndicators()
       .addTo(iphoneFirst)
+
+      // iphone video opacity
+      /*
+      var iphoneSecondScroll = new TimelineMax();
+    
+      iphoneSecondScroll
+      .from(".phone-wrapper .overlay",1, {css:{opacity: "0.5", delay: 1}})
+      .to('.phone-wrapper .overlay', 2, {css:{opacity: "0"}})
+
+      var iphoneSecond = new ScrollMagic.Controller();
+
+      // first scene
+      var iphone2 = new ScrollMagic.Scene({
+        triggerElement: 'iphone2',
+        duration: "300%"
+      })
+
+      .setTween(iphoneSecondScroll)
+      .addIndicators()
+      .addTo(iphoneSecond)
+      */
 
       // macbook first scroll
       var tlFirstScroll = new TimelineMax();
@@ -171,6 +200,7 @@ class Header extends React.Component {
               <div class="top-container">
                 <div className="homepage-hero-module">
                   <div className="phone-wrapper">
+                    <div class="video-controls"></div>
                     <div className="phone-bg"></div>
                     <div class="overlay"></div>
                       <video autoPlay muted loop playsInline>

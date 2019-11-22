@@ -80,11 +80,13 @@ class Header extends React.Component {
       .from(".video-controls", 1, {css:{opacity: "0", delay: 1}})
       .to(".video-controls", 2, {css:{opacity: "1"}})
       .from(".phone-bg", 1, {})
-      .to(".phone-bg", 2,  {css:{width: "1070px", height:"548px", backgroundSize: "1070px 548px", top: "-5px"}})
+      .to(".phone-bg", 2,  {css:{width: "1070px", height:"548px", backgroundSize: "1070px 548px", top: "-5px"}}, '+=2')
       .from(".phone-wrapper", 1, { rotation:0 })
       .from(".phone-wrapper video", 1, {})
       .to(".phone-wrapper", 2, { rotation:-90 })
-      .to(".phone-wrapper video", 2, {css:{width: "calc(100% - 220px)", height:"calc(100% - -90px)", transform: "rotate(90deg)"}})
+      .to(".phone-wrapper video", 2, {css:{width: "calc(100% - 220px)", height:"calc(100% - -90px)", transform: "rotate(90deg)"}}, '-=1')
+      .from(".phone-wrapper", 1, { rotation:0 })
+      .to(".phone-wrapper", 2, { rotation:-90 })
 
       var iphoneFirst = new ScrollMagic.Controller();
 

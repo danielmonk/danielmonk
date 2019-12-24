@@ -215,13 +215,13 @@ class Header extends React.Component {
                 <div className="homepage-hero-module">
                   <div className="text-panel text-panel--left">
                     <div className="text-panel__block first">
-                      <h4>Hi, I'm Daniel.</h4>
+                      <h4>Hi, I'm Daniel. 👋</h4>
                     </div>
                     <div className="text-panel__block second">
                       <p>I'm a front-end developer living in <strong>Peterborough</strong></p>
                     </div>
                     <div className="text-panel__block third">
-                      <p>I'm currently working for <a target="_blank" href="https://www.zazzlemedia.co.uk">Zazzle Media</a></p>
+                      <p>I'm currently working for <a target="_blank" href="https://www.zazzlemedia.co.uk">Zazzle Media</a>.</p>
                     </div>
                     <div className="text-panel__block fourth">
                       <p>Part of the <a target="_blank" href="https://www.ipgmediabrands.com/">IPG Mediabrands</a> group.</p>

@@ -82,6 +82,7 @@ class Header extends React.Component {
       .to(".phone-wrapper video", 2, {css:{padding:"0px 165px 0 185px"}})
       .from(".video-controls", 1, {css:{opacity: "0", delay: 1}})
       .to(".video-controls", 2, {css:{opacity: "1"}})
+<<<<<<< HEAD
       .from(".phone-wrapper", 1, { rotation:0 })
       .from(".phone-wrapper video", 1, {})
       .to(".phone-wrapper", 2, { rotation:-90 })
@@ -97,6 +98,16 @@ class Header extends React.Component {
           .to(element, 2, {x:-400, opacity:0, ease:Expo.easeOut} )
       })
 
+=======
+      .from(".phone-bg", 1, {})
+      .to(".phone-bg", 2,  {css:{width: "1070px", height:"548px", backgroundSize: "1070px 548px", top: "-5px"}}, '+=2')
+      .from(".phone-wrapper", 1, { rotation:0 })
+      .from(".phone-wrapper video", 1, {})
+      .to(".phone-wrapper", 2, { rotation:-90 })
+      .to(".phone-wrapper video", 2, {css:{width: "calc(100% - 220px)", height:"calc(100% - -90px)", transform: "rotate(90deg)"}}, '-=1')
+      .from(".phone-wrapper", 1, { rotation:0 })
+      .to(".phone-wrapper", 2, { rotation:-90 })
+>>>>>>> a507b4379ff9b848c7891bb2270c8eb6c3f36cd8
 
       
       

@@ -1,7 +1,9 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import $ from 'jquery'
 import Typist from 'react-typist';
+import CSSRulePlugin from "gsap/CSSRulePlugin";
 import TweenMax, { TimelineMax, Elastic, Expo } from "gsap/TweenMax";
 import ScrollMagic from 'scrollmagic';
 import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
@@ -69,6 +71,7 @@ class Header extends React.Component {
     // gsap animations
       // iphone ititial
       var iphoneFirstScroll = new TimelineMax();
+  
 
       iphoneFirstScroll
       .from(".phone-wrapper",1, {scale: 3.5, transformOrigin: "center center", delay: 1})
@@ -79,19 +82,30 @@ class Header extends React.Component {
       .to(".phone-wrapper video", 2, {css:{padding:"0px 165px 0 185px"}})
       .from(".video-controls", 1, {css:{opacity: "0", delay: 1}})
       .to(".video-controls", 2, {css:{opacity: "1"}})
-      .from(".phone-bg", 1, {})
-      .to(".phone-bg", 2,  {css:{width: "1070px", height:"548px", backgroundSize: "1070px 548px", top: "-5px"}})
       .from(".phone-wrapper", 1, { rotation:0 })
       .from(".phone-wrapper video", 1, {})
       .to(".phone-wrapper", 2, { rotation:-90 })
       .to(".phone-wrapper video", 2, {css:{width: "calc(100% - 220px)", height:"calc(100% - -90px)", transform: "rotate(90deg)"}})
+      .from(".text-panel", 1, { css:{width: "0"}})
+      .to(".phone-wrapper video", 2, {css:{width: "calc(100% - 100px)", height:"calc(100% - 0px)"}})
+      .to(".text-panel", 2, { css:{width: "50%"}})
+      
+      // each text panel block
+      $(".text-panel__block").each(function(index, element){
+        iphoneFirstScroll.from(element, 1, {x:-400, opacity:0})
+          .to(element, 2, {x:0, opacity:1, ease:Expo.easeOut, delay: 2} )
+          .to(element, 2, {x:-400, opacity:0, ease:Expo.easeOut} )
+      })
 
+
+      
+      
       var iphoneFirst = new ScrollMagic.Controller();
 
       // first scene
       var iphone1 = new ScrollMagic.Scene({
         triggerElement: 'iphone1',
-        duration: "500%"
+        duration: "5000%"
       })
 
       .setTween(iphoneFirstScroll)
@@ -199,6 +213,23 @@ class Header extends React.Component {
             <div className="top-sticky-content">
               <div class="top-container">
                 <div className="homepage-hero-module">
+                  <div className="text-panel text-panel--left">
+                    <div className="text-panel__block first">
+                      <h4>Hi, I'm Daniel.</h4>
+                    </div>
+                    <div className="text-panel__block second">
+                      <p>I'm a front-end developer living in <strong>Peterborough</strong></p>
+                    </div>
+                    <div className="text-panel__block third">
+                      <p>I'm currently working for <a target="_blank" href="https://www.zazzlemedia.co.uk">Zazzle Media</a></p>
+                    </div>
+                    <div className="text-panel__block fourth">
+                      <p>Part of the <a target="_blank" href="https://www.ipgmediabrands.com/">IPG Mediabrands</a> group.</p>
+                    </div>
+                    <div className="text-panel__block fifth">
+                      <p>I've been working in development for over <strong>6 years.</strong></p>
+                    </div>
+                  </div>
                   <div className="phone-wrapper">
                     <div class="video-controls"></div>
                     <div className="phone-bg"></div>

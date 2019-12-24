@@ -37,7 +37,7 @@ body.page--home{
     }
     .top-sticky-container{
         color: #fff;
-        height: 800vh;
+        height: 4000vh;
         align-items: start;
         display: block;
         top: 0;
@@ -60,6 +60,25 @@ body.page--home{
             width:100%;
             transition: all .4s;
             opacity:1;
+            display:flex;
+        }
+        .text-panel{
+            //width:50%;
+            &--left{
+
+            }
+            &__block{
+                padding:50px 50px 0 100px;
+                font-size:1.5em;
+                //display:none;
+                //height:100vh;
+                position:absolute;
+                a{
+                    color:inherit;
+                    font-weight:bold;
+                    text-decoration:none;
+                }
+            }
         }
         .phone-wrapper{
             width: 1070px;
@@ -74,6 +93,7 @@ body.page--home{
             z-index: 1;
             background: #000;
             overflow:hidden;
+            right:0;
             .video-controls{
                 background-image:url("../images/video-controls.png");
                 width: 890px;
@@ -88,11 +108,11 @@ body.page--home{
             .phone-bg{
                 background-image:url("../images/iphone-bg.png");
                 width: 1070px;
-                height: 538px;
-                background-size: 1070px 538px;
+                height: 548px;
+                background-size: 1070px 548px;
                 background-repeat: no-repeat;
                 position: absolute;
-                top: 0;
+                top: -5px;
                 left: 0;
                 z-index: 3;
                 transform:rotate(180deg);

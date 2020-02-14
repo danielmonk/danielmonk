@@ -36,7 +36,7 @@
     "react-youtube": "^7.9.0",
     "scrollmagic": "^2.0.7",
     "swup": "^2.0.4",
-    "yarn": "^1.16.0"
+    "yarn": "^1.22.0"
   },
   "devDependencies": {
     "imports-loader": "^0.8.0",

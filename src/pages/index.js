@@ -18,6 +18,7 @@ import EightLogo from "../images/888sport-logo.png"
 import youtubeBGImg from "../images/youtube.jpg"
 import youtubeVideo from "../videos/NY-Collated-minimised.mp4"
 import macbookBG from "../images/macbook-render.png"
+import iphoneVideo1 from "../videos/iphone-video-1.mp4"
 
 
 const styles = {
@@ -68,6 +69,12 @@ class Header extends React.Component {
         }, 500)
     })
 
+    // video function
+    function playVideo1() {
+      var video = document.querySelector(".phone-gif-single.first video");
+      video.play(); //this plays video by using usual javascript method to play videos, not to be confused with GSAP's play methods.
+    }
+
     // gsap animations
       // iphone ititial
       var iphoneFirstScroll = new TimelineMax();
@@ -78,37 +85,41 @@ class Header extends React.Component {
       .to('.phone-wrapper', 2, {scale: 1, y: "0vh"})
       .from(".phone-wrapper .overlay",1, {css:{opacity: "0.5", delay: 1}})
       .to('.phone-wrapper .overlay', 2, {css:{opacity: "0"}})
-      .from(".phone-wrapper video", 1, {css:{padding: "0px", delay: 1}})
-      .to(".phone-wrapper video", 2, {css:{padding:"0px 165px 0 185px"}})
+      .from(".phone-wrapper .new-york", 1, {css:{padding: "0px", delay: 1}})
+      .to(".phone-wrapper .new-york", 2, {css:{padding:"0px 165px 0 185px"}})
       .from(".video-controls", 1, {css:{opacity: "0", delay: 1}})
       .to(".video-controls", 2, {css:{opacity: "1"}})
-<<<<<<< HEAD
       .from(".phone-wrapper", 1, { rotation:0 })
-      .from(".phone-wrapper video", 1, {})
+      .from(".phone-wrapper .new-york", 1, {})
       .to(".phone-wrapper", 2, { rotation:-90 })
-      .to(".phone-wrapper video", 2, {css:{width: "calc(100% - 220px)", height:"calc(100% - -90px)", transform: "rotate(90deg)"}})
+      .to(".phone-wrapper .new-york", 2, {css:{width: "calc(100% - 220px)", height:"calc(100% - -90px)", transform: "rotate(90deg)"}})
       .from(".text-panel", 1, { css:{width: "0"}})
+      .from(".video-controls", 1, {css:{opacity: "1"}})
+      .to(".video-controls", 2, {css:{opacity: "0"}})
+      .to(".phone-wrapper", 2, { css:{right:"-25vw", width:"941px", height:"403px", top:"30%" }})
       .to(".phone-wrapper video", 2, {css:{width: "calc(100% - 100px)", height:"calc(100% - 0px)"}})
       .to(".text-panel", 2, { css:{width: "50%"}})
-      
+      .from(".phone-gif-single.first", 1, {css:{opacity: "0"}})
+      .to(".phone-gif-single.first", 1, {css:{opacity: "1"}})
+      .call(playVideo1, null, null, "-=0.5")
+      .from(".text-panel__block.first", 1, {x:-400, opacity:0})
+      .to(".text-panel__block.first", 2, {x:0, opacity:1, ease:Expo.easeOut, delay: 2} )
+      .to(".text-panel__block.first", 2, {x:-400, opacity:0, ease:Expo.easeOut})
+      .from(".text-panel__block.second", 1, {x:-400, opacity:0})
+      .to(".text-panel__block.second", 2, {x:0, opacity:1, ease:Expo.easeOut, delay: 2} )
+      .to(".text-panel__block.second", 2, {x:-400, opacity:0, ease:Expo.easeOut})
+      .from(".text-panel__block.third", 1, {x:-400, opacity:0})
+      .to(".text-panel__block.third", 2, {x:0, opacity:1, ease:Expo.easeOut, delay: 2} )
+      .to(".text-panel__block.third", 2, {x:-400, opacity:0, ease:Expo.easeOut})
+
       // each text panel block
+      /*
       $(".text-panel__block").each(function(index, element){
         iphoneFirstScroll.from(element, 1, {x:-400, opacity:0})
           .to(element, 2, {x:0, opacity:1, ease:Expo.easeOut, delay: 2} )
           .to(element, 2, {x:-400, opacity:0, ease:Expo.easeOut} )
       })
-
-=======
-      .from(".phone-bg", 1, {})
-      .to(".phone-bg", 2,  {css:{width: "1070px", height:"548px", backgroundSize: "1070px 548px", top: "-5px"}}, '+=2')
-      .from(".phone-wrapper", 1, { rotation:0 })
-      .from(".phone-wrapper video", 1, {})
-      .to(".phone-wrapper", 2, { rotation:-90 })
-      .to(".phone-wrapper video", 2, {css:{width: "calc(100% - 220px)", height:"calc(100% - -90px)", transform: "rotate(90deg)"}}, '-=1')
-      .from(".phone-wrapper", 1, { rotation:0 })
-      .to(".phone-wrapper", 2, { rotation:-90 })
->>>>>>> a507b4379ff9b848c7891bb2270c8eb6c3f36cd8
-
+      */
       
       
       var iphoneFirst = new ScrollMagic.Controller();
@@ -226,28 +237,29 @@ class Header extends React.Component {
                 <div className="homepage-hero-module">
                   <div className="text-panel text-panel--left">
                     <div className="text-panel__block first">
-                      <h4>Hi, I'm Daniel. 👋</h4>
+                      <h4>Hi, I'm Daniel. 👋 </h4>
                     </div>
                     <div className="text-panel__block second">
-                      <p>I'm a front-end developer living in <strong>Peterborough</strong></p>
+                      <p>I'm a front-end developer currently living in <strong>Stamford</strong>, currently working for <a target="_blank" href="https://www.zazzlemedia.co.uk">Zazzle Media</a>.</p>
                     </div>
                     <div className="text-panel__block third">
-                      <p>I'm currently working for <a target="_blank" href="https://www.zazzlemedia.co.uk">Zazzle Media</a>.</p>
-                    </div>
-                    <div className="text-panel__block fourth">
-                      <p>Part of the <a target="_blank" href="https://www.ipgmediabrands.com/">IPG Mediabrands</a> group.</p>
-                    </div>
-                    <div className="text-panel__block fifth">
-                      <p>I've been working in development for over <strong>6 years.</strong></p>
+                      <p>I've been working in development for over <strong>6 years</strong> &amp; I'm always interested in using the latest technology to passionately create cool things on the internet.</p>
                     </div>
                   </div>
                   <div className="phone-wrapper">
                     <div class="video-controls"></div>
                     <div className="phone-bg"></div>
-                    <div class="overlay"></div>
-                      <video autoPlay muted loop playsInline>
+                    <div className="overlay"></div>
+                      <video autoPlay muted loop playsInline className="new-york">
                         <source src={youtubeVideo} type="video/mp4" />
                       </video>
+                      <div className="phone-gif-timeline">
+                        <div className="phone-gif-single first">
+                          <video autoPlay muted loop playsInline >
+                            <source src={iphoneVideo1} type="video/mp4" />
+                          </video>
+                        </div>
+                      </div>
                   </div>
                 </div>
               </div>

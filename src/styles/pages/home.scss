@@ -1,5 +1,5 @@
 .purple-overlay{
-    background: #000; /* Old browsers */
+    background: $off-black; /* Old browsers */
     position: absolute;
     top:0px;
     left:0px;
@@ -16,7 +16,7 @@ body.page--home{
     }
 }
 .page--home{
-    background:#000;
+    background:$off-black;
     margin-top:0px;
     padding-top:0px;
     .container.white{
@@ -43,7 +43,7 @@ body.page--home{
         top: 0;
         .top-sticky-content{
             position: sticky;
-            top: 20vh;
+            top: 31vh;
             width: 100%;
         }
         .top-container{
@@ -82,8 +82,10 @@ body.page--home{
             }
         }
         .phone-wrapper{
-            width: 1070px;
-            height: 538px;
+            //width: 1070px;
+            //height: 538px;
+            width:821px;
+            height:403px;
             //overflow: hidden;
             justify-content: center;
             align-items: center;
@@ -92,22 +94,23 @@ body.page--home{
             position: relative;
             margin: 0 auto 0;
             z-index: 1;
-            background: #000;
+            background: $off-black;
             overflow:hidden;
             right:0;
             .video-controls{
-                background-image:url("../images/video-controls.png");
-                width: 890px;
-                height: 462px;
-                background-size: 890px 462px;
+                background-image:url("../images/video-controls-new.png");
+                width: 745px;
+                height: 347px;
+                background-size: 745px 347px;
                 background-repeat: no-repeat;
                 position: absolute;
-                top: 38px;
+                top: 30px;
                 left: 45px;
                 z-index: 3;
+                opacity:0;
             }
             .phone-bg{
-                background-image:url("../images/iphone-bg.png");
+                background-image:url("../images/iphone-bg-new.png");
                 background-repeat: no-repeat;
                 position: absolute;
                 z-index: 3;
@@ -135,17 +138,18 @@ body.page--home{
                 justify-content: center;
             }
             .phone-gif-timeline{
+                z-index:-1;
                 .phone-gif-single{
+                    opacity:0;
                     &.first{
                         video{
-                            padding: 0px 395px 0px 420px;
+                            padding: 0px 35px 0px 41px;
                             height: calc(100% - -355px);
                             width: calc(100% - 401px);
                             transform: matrix(0, 1, -1, 0, 0, 0);
-                            top: -152px;
-                            z-index: 99!important;
-                            right: 240px;
-                            padding: 0px 125px 0px 69px;
+                            top: -177px;
+                            //z-index: 99!important;
+                            right: 190px;
                         }
                     }
                 }
@@ -480,7 +484,7 @@ body.page--home{
                 height: 100%;
                 width: 100%;
                 overflow: visible;
-                background: #000;
+                background: $off-black;
             }
             .video-container .poster img {
                 width: 100%;

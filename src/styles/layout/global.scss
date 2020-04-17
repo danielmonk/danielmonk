@@ -6,7 +6,7 @@ body{
     overflow-x: hidden;
     margin: 0;
     color: #fff;
-    background: #0e0d10;
+    background: $off-black;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size:14px;
@@ -63,7 +63,7 @@ body{
 //page 
 page{
   display: block;
-  background: #0e0d10;
+  background: $off-black;
 }
 
 //section
@@ -91,7 +91,7 @@ section{
     width: 100%;
     left: 0;
     top: 0;
-    background-color: #000;
+    background-color: $off-black;
     position: absolute;
     z-index: 2;
     opacity: 0.5;
